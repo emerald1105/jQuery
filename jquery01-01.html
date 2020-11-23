@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ 1-1</title>
+
+    <!-- <script src="./jquery-3.5.1.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    <button id="btn1" type="button">자바스크립트로 버튼 이벤트</button>
+    <button id="btn2" type="button">제이쿼리로 버튼 이벤트</button>
+    <button id="btn3" type="button">cdn으로 제이쿼리 로딩하여 버튼 이벤트</button>
+
+    <script>
+        var btn1 = document.getElementById("btn1");
+
+        document.getElementById
+        document.getElementsByClassName
+        document.getElementsByTagName
+        
+
+        btn1.addEventListener("click", function(){
+            alert("자바스크립트로 버튼 이벤트 발생");
+        });
+
+        $("#btn2").on("click", function(){
+            alert("제이쿼리로 버튼 이벤트 발생");
+        });
+
+        $("#btn3").on("click", function(){
+            alert("cdn으로 버튼 이벤트 발생");
+        });
+ 
+    </script>
+</body>
+</html>
